@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div class="sweetAlert">Message</div>
+    <div class="container">
+      <div class="form-container">
+        <form class="form sign_in">
+          <div class="heading">
+            <h2>Welcome Back!</h2>
+            <p>Login to your account</p>
+          </div>
+
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="For ex. KareemRoshdy"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Minimum 6 characters"
+            />
+            <span class="show-hidden-password signInForm" data-form="signIn"
+              >show</span
+            >
+          </div>
+          <button class="btn">Sign in</button>
+
+          <p class="switch-link">
+            I don't have an account <a href="#" id="signUp">Sign Up</a>
+          </p>
+        </form>
+
+        <form class="form sign_up">
+          <div class="heading">
+            <h2>Welcome Back!</h2>
+            <p>Create new account</p>
+          </div>
+
+          <div class="input-group">
+            <label for="signUpUsername">Username</label>
+            <input
+              type="text"
+              id="signUpUsername"
+              placeholder="For ex. KareemRoshdy"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="For ex. KareemRoshdy" />
+          </div>
+
+          <div class="input-group">
+            <label for="signUpPassword">Password</label>
+            <input
+              type="password"
+              id="signUpPassword"
+              placeholder="Minimum 6 characters"
+            />
+            <span class="show-hidden-password signUpForm" data-form="signUp"
+              >show</span
+            >
+          </div>
+          <button class="btn">Sign up</button>
+
+          <p class="switch-link">
+            I have an account <a href="#" id="signIn">Sign In</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <section class="home">
+      <div class="home-container">
+        <h1>Welcome</h1>
+        <button class="btn" id="logout">Logout</button>
+      </div>
+    </section>
+
+    <script src="scrip.js"></script>
+  </body>
+</html>
